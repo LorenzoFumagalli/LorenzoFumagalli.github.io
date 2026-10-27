@@ -1,6 +1,6 @@
 # Lorenzo Fumagalli
 
-> Senior Mobile Engineer & Technical Lead based in Milan, Italy. Android (Kotlin, Jetpack Compose), Kotlin Multiplatform, mobile architecture. Senior Consultant at Deloitte, leading a team of 3 Android and 5 iOS developers on Calzedonia Group apps (Tezenis, Calzedonia, Intimissimi) used by over 1.5 million users.
+> Senior Mobile Engineer & Technical Lead based in Milan, Italy. Android (Kotlin, Jetpack Compose), Kotlin Multiplatform, mobile architecture. Senior Consultant at Deloitte, leading a team of 3 Android and 5 iOS developers on Calzedonia Group apps (Tezenis, Calzedonia, Intimissimi) with over 1.5 million installs.
 
 ## CV
 - [CV (Italiano)](https://lorenzofumagalli.github.io/): profilo, competenze, esperienza, formazione
