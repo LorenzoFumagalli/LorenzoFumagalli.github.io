@@ -6,6 +6,10 @@
 - [CV (Italiano)](https://lorenzofumagalli.github.io/): profilo, competenze, esperienza, formazione
 - [CV (English)](https://lorenzofumagalli.github.io/en/): summary, skills, experience, education
 
+## Downloads
+- [CV PDF (Italiano)](https://lorenzofumagalli.github.io/cv/Lorenzo-Fumagalli-CV-IT.pdf)
+- [CV PDF (English)](https://lorenzofumagalli.github.io/cv/Lorenzo-Fumagalli-CV-EN.pdf)
+
 ## Links
 - [LinkedIn](https://www.linkedin.com/in/lorenzofumagalli0)
 - [GitHub](https://github.com/LorenzoFumagalli)
