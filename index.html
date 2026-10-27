@@ -1,400 +1,206 @@
 <!DOCTYPE html>
-<html data-lang="it"> <head>
+<html lang="it">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorenzo Fumagalli | Senior Mobile Engineer & Technical Lead</title>
-    <style>
-        :root {
-            --bg-color: #121214;
-            --text-color: #e1e1e6;
-            --text-secondary: #a8a8b3;
-            --accent-color: #04d361;
-            --border-color: #29292e;
-            --card-bg: #202024;
-        }
+    <title>Lorenzo Fumagalli | Senior Mobile Engineer &amp; Technical Lead</title>
+    <meta name="description" content="Lorenzo Fumagalli, Senior Mobile Engineer e Technical Lead a Milano. Android, Kotlin, Jetpack Compose, Kotlin Multiplatform. Guida team Android e iOS su app enterprise Fashion/Retail usate da oltre 1.5 milioni di utenti.">
+    <meta name="author" content="Lorenzo Fumagalli">
+    <link rel="canonical" href="https://lorenzofumagalli.github.io/">
+    <link rel="alternate" hreflang="it" href="https://lorenzofumagalli.github.io/">
+    <link rel="alternate" hreflang="en" href="https://lorenzofumagalli.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://lorenzofumagalli.github.io/">
+    <link rel="stylesheet" href="/style.css">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Lorenzo Fumagalli | Senior Mobile Engineer &amp; Technical Lead">
+    <meta property="og:description" content="Android, Kotlin, Jetpack Compose, Kotlin Multiplatform. Leadership tecnica di team Android e iOS su app enterprise Fashion/Retail.">
+    <meta property="og:url" content="https://lorenzofumagalli.github.io/">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 40px 20px;
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "inLanguage": "it",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Lorenzo Fumagalli",
+            "jobTitle": "Senior Mobile Engineer & Technical Lead",
+            "url": "https://lorenzofumagalli.github.io/",
+            "email": "mailto:lorenzo95fumagalli@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Milano",
+                "addressCountry": "IT"
+            },
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Deloitte"
+            },
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Politecnico di Milano"
+            },
+            "knowsLanguage": ["it", "en"],
+            "knowsAbout": [
+                "Android", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform", "Compose Multiplatform",
+                "Ktor", "Koin", "MVVM", "Clean Architecture", "Flutter", "Node.js", "TypeScript",
+                "Agile Scrum", "Mobile architecture"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/lorenzofumagalli0",
+                "https://github.com/LorenzoFumagalli"
+            ]
         }
-
-        .container {
-            max-width: 750px;
-            margin: 0 auto;
-        }
-
-        /* Language Switcher Styling */
-        .lang-switcher {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-
-        .lang-btn {
-            background: none;
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .lang-btn:hover {
-            border-color: var(--accent-color);
-            color: #fff;
-        }
-
-        .lang-btn.active {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: #121214;
-            font-weight: bold;
-        }
-
-        header {
-            margin-bottom: 40px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            color: #fff;
-            letter-spacing: -0.5px;
-        }
-
-        .subtitle {
-            font-size: 1.25rem;
-            color: var(--accent-color);
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-
-        .links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-
-        .links a:hover {
-            color: var(--accent-color);
-        }
-
-        section {
-            margin-bottom: 45px;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        h2::after {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background-color: var(--border-color);
-        }
-
-        p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            margin-bottom: 15px;
-        }
-
-        strong {
-            color: #fff;
-        }
-
-        .job, .project {
-            margin-bottom: 35px;
-        }
-
-        .job-header, .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-
-        .job-title {
-            font-weight: 600;
-            font-size: 1.15rem;
-            color: #fff;
-        }
-
-        .job-company {
-            color: var(--accent-color);
-        }
-
-        .date {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            font-variant-numeric: tabular-nums;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            color: var(--text-secondary);
-            margin-bottom: 6px;
-            font-size: 1rem;
-        }
-
-        .tags {
-            margin-top: 12px;
-        }
-
-        .tag {
-            background: var(--card-bg);
-            color: var(--text-secondary);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-right: 6px;
-            display: inline-block;
-            margin-bottom: 6px;
-            border: 1px solid transparent;
-        }
-        
-        .tag:hover {
-            border-color: var(--border-color);
-            color: #fff;
-        }
-
-        /* Language Visibility Engine Fix */
-        [lang="en"], [lang="it"] {
-            display: none !important;
-        }
-
-        html[data-lang="en"] [lang="en"],
-        html[data-lang="en"] span[lang="en"], 
-        html[data-lang="en"] a[lang="en"],
-        html[data-lang="en"] div[lang="en"],
-        html[data-lang="en"] ul[lang="en"] {
-            display: block !important;
-        }
-
-        html[data-lang="en"] span[lang="en"], 
-        html[data-lang="en"] a[lang="en"] {
-            display: inline-block !important;
-        }
-
-        html[data-lang="it"] [lang="it"],
-        html[data-lang="it"] span[lang="it"], 
-        html[data-lang="it"] a[lang="it"],
-        html[data-lang="it"] div[lang="it"],
-        html[data-lang="it"] ul[lang="it"] {
-            display: block !important;
-        }
-
-        html[data-lang="it"] span[lang="it"], 
-        html[data-lang="it"] a[lang="it"] {
-            display: inline-block !important;
-        }
-    </style>
+    }
+    </script>
 </head>
 <body>
 
     <div class="container">
-        
-        <div class="lang-switcher">
-            <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
-            <button class="lang-btn" onclick="setLanguage('en')">EN</button>
-        </div>
-        
+
+        <nav class="lang-switcher" aria-label="Lingua">
+            <a class="lang-btn" href="/" hreflang="it" lang="it" aria-current="page">IT</a>
+            <a class="lang-btn" href="/en/" hreflang="en" lang="en">EN</a>
+        </nav>
+
         <header>
             <h1>Lorenzo Fumagalli</h1>
-            <div class="subtitle" lang="it">Senior Mobile Engineer & Technical Lead</div>
-            <div class="subtitle" lang="en">Senior Mobile Engineer & Technical Lead</div>
+            <p class="subtitle">Senior Mobile Engineer &amp; Technical Lead</p>
+            <address class="location">Milano, Italia</address>
             <div class="links">
                 <a href="mailto:lorenzo95fumagalli@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/lorenzofumagalli0/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/LorenzoFumagalli" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/lorenzofumagalli0" rel="me noopener" target="_blank">LinkedIn</a>
+                <a href="https://github.com/LorenzoFumagalli" rel="me noopener" target="_blank">GitHub</a>
             </div>
         </header>
 
-        <section id="about">
-            <h2 lang="it">Chi Sono</h2>
-            <h2 lang="en">About Me</h2>
-            
-            <p lang="it">
-                Ingegnere Informatico specializzato nello sviluppo di ecosistemi mobile scalabili, performanti e moderni. 
-                In <strong>Deloitte</strong> guido team cross-funzionali e governo l'architettura tecnica di applicazioni enterprise nel settore Retail/Fashion usate da oltre <strong>1.5M di utenti</strong>. Sperimentatore attivo e appassionato di nuove tecnologie (Kotlin Multiplatform, Compose, Flutter).
+        <main>
+
+        <section id="about" aria-labelledby="about-h">
+            <h2 id="about-h">Profilo professionale</h2>
+            <p>
+                Ingegnere Informatico specializzato nello sviluppo di ecosistemi mobile scalabili, performanti e moderni.
+                In <strong>Deloitte</strong> guido team di sviluppo cross-funzionali (Android, iOS, Backend) e governo l'architettura tecnica di applicazioni enterprise nel settore Fashion e Retail, utilizzate da oltre <strong>1.5 milioni di utenti</strong>.
             </p>
-            <p lang="en">
-                Highly skilled Computer Science Engineer specializing in building scalable, high-performance, and modern mobile ecosystems. 
-                At <strong>Deloitte</strong>, I lead cross-functional delivery teams and govern the technical architecture of enterprise applications in the Fashion/Retail sector, serving over <strong>1.5M users</strong>. Actively passionate about R&D and emerging frameworks (Kotlin Multiplatform, Compose, Flutter).
+            <p>
+                Comprovata esperienza nella transizione tecnologica di grandi progetti verso Jetpack Compose, Ktor e Koin, unendo una forte seniority tecnica alla capacità di gestire gli stakeholder e coordinare i team secondo la metodologia Agile Scrum.
             </p>
         </section>
 
-        <section id="experience">
-            <h2 lang="it">Esperienza Professionale</h2>
-            <h2 lang="en">Professional Experience</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title"><span class="job-company">Deloitte</span> — Senior Consultant & Tech Lead</span>
-                    <span class="date">2023 — Present</span>
-                </div>
-                
-                <ul lang="it">
-                    <li>Coordinamento di un team Agile Scrum composto da <strong>3 sviluppatori Android</strong> e <strong>5 sviluppatori iOS</strong>.</li>
-                    <li>Guida attiva della migrazione architetturale delle app di punta (Calzedonia, Tezenis, Intimissimi) verso <strong>Jetpack Compose, Ktor e Koin</strong> su paradigma MVVM.</li>
-                    <li>Raggiunti oltre <strong>1.5M di download totali</strong> mantendo un <strong>99.9% Crash-Free rate</strong> su Firebase.</li>
-                    <li>Sviluppo backend in Node.js/TypeScript e integrazione di feature di Gamification (Phaser3).</li>
-                </ul>
-                
-                <ul lang="en">
-                    <li>Coordinated and managed a cross-functional Agile Scrum team of <strong>3 Android</strong> and <strong>5 iOS</strong> developers.</li>
-                    <li>Spearheaded the architectural migration of flagship apps (Calzedonia, Tezenis, Intimissimi) to <strong>Jetpack Compose, Ktor, and Koin</strong> under MVVM patterns.</li>
-                    <li>Scaled core apps to over <strong>1.5M aggregate downloads</strong> while maintaining a <strong>99.9% Crash-Free rate</strong> (Firebase).</li>
-                    <li>Developed dedicated Loyalty and Gamification backends using Node.js, TypeScript, and Phaser3.</li>
-                </ul>
-
-                <div class="tags">
-                    <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Ktor</span><span class="tag">Koin</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Agile Scrum</span>
-                </div>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title"><span class="job-company">Deloitte</span> — Consultant & Analyst</span>
-                    <span class="date">2020 — 2023</span>
-                </div>
-                
-                <ul lang="it">
-                    <li>Sviluppo di feature e-commerce native Android stabili in ambiente Kotlin e Java.</li>
-                    <li><strong>Enel SpA:</strong> Sviluppo di un PoC VoIP superando la sfida tecnica di creare un bridge di comunicazione tra l'SDK nativo in C++ e Xamarin.</li>
-                    <li><strong>Chef Express:</strong> Implementazione di un SDK nativo Android (Java + JS) per l'autenticazione automatica dei dispositivi agli access point dei punti vendita.</li>
-                    <li><strong>Estra SpA:</strong> Attività di bug-fixing e stabilizzazione sistematica del codice legacy Java.</li>
-                </ul>
-                
-                <ul lang="en">
-                    <li>Implemented native Android e-commerce features utilizing Kotlin and Java.</li>
-                    <li><strong>Enel SpA:</strong> Built a VoIP Proof of Concept (PoC), successfully engineering a complex communication bridge between a native C++ SDK and the Xamarin framework.</li>
-                    <li><strong>Chef Express:</strong> Developed a native Android SDK (Java + JavaScript) for seamless automatic user authentication to store Wi-Fi access points.</li>
-                    <li><strong>Estra SpA:</strong> Conducted core bug-fixing and optimization on legacy native Android Java codebases.</li>
-                </ul>
-
-                <div class="tags">
-                    <span class="tag">Android SDK</span><span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">Xamarin</span><span class="tag">JavaScript</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 lang="it">Innovazione & Side Projects</h2>
-            <h2 lang="en">Innovation & Side Projects</h2>
-            
-            <div class="project">
-                <div class="project-header">
-                    <span class="job-title">Jira / YouTrack Sync Bot</span>
-                    <span class="date">Python</span>
-                </div>
-                <p lang="it" style="color: var(--text-secondary); margin-top: 5px;">Automazione interna sviluppata per ottimizzare la sincronizzazione, l'allineamento e il tracking dei ticket di delivery dei team.</p>
-                <p lang="en" style="color: var(--text-secondary); margin-top: 5px;">Internal automation bot built to automatically sync and track delivery tickets between Jira and YouTrack, optimizing workflow efficiency.</p>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <span class="job-title">Ktor Training Backend</span>
-                    <span class="date">Kotlin / Ktor Backend</span>
-                </div>
-                <p lang="it" style="color: var(--text-secondary); margin-top: 5px;">Ideazione e sviluppo di un micro-backend in Ktor utilizzato come sandbox di addestramento per dimezzare i tempi di onboarding delle nuove risorse.</p>
-                <p lang="en" style="color: var(--text-secondary); margin-top: 5px;">Engineered a simulation micro-backend in Ktor used as a training sandbox, cutting onboarding times in half for new technical recruits.</p>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <span class="job-title">R&D Exploration</span>
-                    <span class="date">KMP / Flutter / MQTT</span>
-                </div>
-                <p lang="it" style="color: var(--text-secondary); margin-top: 5px;">Sperimentazione attiva su Kotlin Multiplatform + Compose Multiplatform per lo sviluppo di giochi, Flutter (dashboard POC) e integrazione del protocollo real-time MQTT su Android.</p>
-                <p lang="en" style="color: var(--text-secondary); margin-top: 5px;">Active research on Kotlin Multiplatform + Compose Multiplatform (gaming), Flutter (CMS dashboard PoC), and real-time MQTT protocol implementations on Android.</p>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2 lang="it">Formazione</h2>
-            <h2 lang="en">Education</h2>
-            
-            <div class="job-header">
-                <span class="job-title" lang="it">Laurea Magistrale in Ingegneria Informatica — Politecnico di Milano</span>
-                <span class="job-title" lang="en">M.Sc. in Computer Science Engineering — Politecnico di Milano</span>
-                <span class="date">2017 — 2020</span>
-            </div>
-            <p lang="it" style="color: var(--text-secondary); margin-bottom: 20px;">Focus principale: Intelligenza Artificiale, Robotica e Computer Vision.</p>
-            <p lang="en" style="color: var(--text-secondary); margin-bottom: 20px;">Major focus: Artificial Intelligence, Robotics and Computer Vision.</p>
-
-            <div class="job-header">
-                <span class="job-title" lang="it">Laurea Triennale in Ingegneria Informatica — Politecnico di Milano</span>
-                <span class="job-title" lang="en">B.Sc. in Computer Science Engineering — Politecnico di Milano</span>
-                <span class="date">2014 — 2017</span>
-            </div>
-        </section>
-
-        <section id="languages">
-            <h2 lang="it">Lingue</h2>
-            <h2 lang="en">Languages</h2>
-            <ul>
-                <li lang="it"><strong>Italiano:</strong> Madrelingua</li>
-                <li lang="en"><strong>Italian:</strong> Native</li>
-                <li lang="it"><strong>Inglese:</strong> Fluente (Business English)</li>
-                <li lang="en"><strong>English:</strong> Fluent (Business English)</li>
+        <section id="skills" aria-labelledby="skills-h">
+            <h2 id="skills-h">Competenze tecniche</h2>
+            <ul class="skills">
+                <li><strong>Punti di forza</strong> Mobile Architecture, Technical Leadership, Android (Kotlin, Jetpack Compose), Kotlin Multiplatform, Agile Scrum, Code Review e Mentoring, Migrazioni architetturali, Coordinamento team Android/iOS</li>
+                <li><strong>Uso quotidiano in produzione</strong> Kotlin, Jetpack Compose, Coroutines, Ktor Client, Koin, MVVM, Clean Architecture, Room, Firebase, Git, CI/CD (Fastlane), Jira, ServiceNow, YouTrack</li>
+                <li><strong>Esperienza consolidata</strong> Java, XML UI, Retrofit, Hilt, TypeScript, Node.js, SQL, Ktor Backend</li>
+                <li><strong>Progetti e R&amp;D</strong> Kotlin Multiplatform (KMP), Compose Multiplatform, Flutter, MQTT, Python (automazione), C / C++ (PoC)</li>
+                <li><strong>Coordinamento</strong> iOS (nativo), come Mobile Architect</li>
             </ul>
         </section>
 
+        <section id="experience" aria-labelledby="experience-h">
+            <h2 id="experience-h">Esperienza professionale</h2>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3><span class="job-company">Deloitte</span> — Milano, Italia</h3>
+                    <span class="date"><time datetime="2020-05">Maggio 2020</time> — Presente</span>
+                </div>
+                <div class="role-block">
+                    <p class="role-line"><strong>Senior Consultant / Mobile Technical Lead</strong> · <time datetime="2023-06">Giugno 2023</time> – Presente</p>
+                    <p class="role-line"><strong>Consultant / Android Developer</strong> · <time datetime="2021-12">Dicembre 2021</time> – <time datetime="2023-06">Giugno 2023</time></p>
+                    <p class="role-line"><strong>Analyst / Android Developer</strong> · <time datetime="2020-05">Maggio 2020</time> – <time datetime="2021-12">Dicembre 2021</time></p>
+                </div>
+
+                <h4 class="role-line"><strong>Progetto principale:</strong> E-commerce &amp; Loyalty App del Gruppo Calzedonia (Tezenis, Calzedonia, Intimissimi)</h4>
+                <ul>
+                    <li><strong>Coordinamento e Agile:</strong> gestione quotidiana di un team cross-functional di <strong>3 sviluppatori Android</strong> e <strong>5 sviluppatori iOS</strong>, di cui sono Mobile Architect. Interfaccia diretta con il team backend e con il cliente finale, facilitando la delivery secondo Agile Scrum.</li>
+                    <li><strong>Evoluzione architetturale:</strong> definizione delle linee guida tecniche e supervisione della qualità del codice con sessioni sistematiche di Code Review. Guida della migrazione delle app di punta su architettura MVVM / Clean Architecture:
+                        <ul>
+                            <li>transizione completa della UI da XML a <strong>Jetpack Compose</strong>;</li>
+                            <li>refactoring del network layer da Retrofit a <strong>Ktor</strong>;</li>
+                            <li>migrazione della Dependency Injection da Hilt a <strong>Koin</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Backend &amp; Gamification:</strong> sviluppo del backend dedicato alla Loyalty e della soluzione di Gamification, con frontend e backend in TypeScript e Node.js e il gioco realizzato in Phaser 3, integrata nativamente nelle app Android.</li>
+                    <li><strong>Risultati:</strong> oltre <strong>1.5 milioni di utenti</strong> sulle app del Gruppo Calzedonia, con il <strong>99.9% di utenti crash-free</strong> (Firebase).</li>
+                </ul>
+
+                <h4 class="role-line"><strong>Altre esperienze in Deloitte</strong> (ruolo: Analyst)</h4>
+                <ul>
+                    <li><strong>Enel SpA (Energy):</strong> Proof of Concept per l'integrazione di funzionalità VoIP, con bridge di comunicazione tra l'SDK nativo in C++ e il framework Xamarin.</li>
+                    <li><strong>Chef Express SpA (Food Service):</strong> SDK nativo Android (Java + JavaScript) per l'autenticazione e la connessione automatica dei dispositivi mobile agli access point Wi-Fi dei punti vendita.</li>
+                    <li><strong>Estra SpA (Energy):</strong> bug fixing e stabilizzazione del codice su codebase nativa Android in Java.</li>
+                </ul>
+
+                <ul class="tags" aria-label="Tecnologie">
+                    <li>Kotlin</li><li>Jetpack Compose</li><li>Ktor</li><li>Koin</li><li>MVVM</li><li>Clean Architecture</li><li>Node.js</li><li>TypeScript</li><li>Phaser 3</li><li>Firebase</li><li>Agile Scrum</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-h">
+            <h2 id="projects-h">Innovazione &amp; progetti personali</h2>
+
+            <article class="project">
+                <div class="job-header">
+                    <h3>Ticket Sync Bot: Jira / ServiceNow ↔ YouTrack</h3>
+                    <span class="date">Python</span>
+                </div>
+                <p>Bot Python per l'integrazione, la sincronizzazione e il tracking automatico dei ticket tra Jira e YouTrack, con una seconda versione per ServiceNow e YouTrack, che ottimizza il workflow del team di delivery in Deloitte.</p>
+            </article>
+
+            <article class="project">
+                <div class="job-header">
+                    <h3>Ktor Training Backend</h3>
+                    <span class="date">Kotlin / Ktor</span>
+                </div>
+                <p>Micro-backend in Ktor usato come ambiente di simulazione e addestramento per l'onboarding e la formazione delle nuove risorse tecniche del team.</p>
+            </article>
+
+            <article class="project">
+                <div class="job-header">
+                    <h3>R&amp;D Mobile</h3>
+                    <span class="date">KMP / Flutter / MQTT</span>
+                </div>
+                <p>Sperimentazione su protocolli real-time (MQTT in ambiente Android) e sviluppo di progetti personali e PoC cross-platform con Kotlin Multiplatform, Compose Multiplatform e Flutter.</p>
+            </article>
+        </section>
+
+        <section id="education" aria-labelledby="education-h">
+            <h2 id="education-h">Istruzione e formazione</h2>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Laurea Magistrale in Ingegneria Informatica — Politecnico di Milano</h3>
+                    <span class="date"><time datetime="2017">2017</time> — <time datetime="2020">2020</time></span>
+                </div>
+                <p>Focus principale: Artificial Intelligence, Robotics e Computer Vision.</p>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Laurea Triennale in Ingegneria Informatica — Politecnico di Milano</h3>
+                    <span class="date"><time datetime="2014">2014</time> — <time datetime="2017">2017</time></span>
+                </div>
+            </article>
+        </section>
+
+        <section id="languages" aria-labelledby="languages-h">
+            <h2 id="languages-h">Lingue</h2>
+            <ul>
+                <li><strong>Italiano:</strong> madrelingua</li>
+                <li><strong>Inglese:</strong> fluente (Business English)</li>
+            </ul>
+        </section>
+
+        </main>
+
     </div>
 
-    <script>
-        function setLanguage(lang) {
-            document.documentElement.setAttribute('data-lang', lang);
-            
-            const buttons = document.querySelectorAll('.lang-btn');
-            buttons.forEach(btn => {
-                if(btn.innerText.toLowerCase() === lang) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-            
-            localStorage.setItem('portfolio-lang', lang);
-        }
-
-        const savedLang = localStorage.getItem('portfolio-lang') || 'it';
-        setLanguage(savedLang);
-    </script>
 </body>
 </html>
